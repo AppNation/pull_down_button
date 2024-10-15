@@ -471,7 +471,7 @@ class _LargeItem extends StatelessWidget {
         : ElementSize.resolveLarge(context);
 
     final isInAccessibilityMode = TextUtils.isInAccessibilityMode(context);
-    final maxLines = isInAccessibilityMode ? 3 : 2;
+    const maxLines = 1; //isInAccessibilityMode ? 3 : 2;
 
     var resolvedColor = iconColor ?? titleStyle.color!;
     var resolvedStyle = titleStyle;
